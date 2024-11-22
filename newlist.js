@@ -1,4 +1,3 @@
-// Load the shopping list from localStorage and display it
 function loadShoppingList() {
     // Retrieve the shopping list from localStorage
     const shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
@@ -28,3 +27,20 @@ function loadShoppingList() {
         listContainer.innerHTML = '<p>Your shopping list is empty.</p>';
     }
 }
+
+// Redirect back to the previous page
+function goBack() {
+    if (window.history.length > 1) {
+        window.history.back(); // Go to the previous page in the history
+    } else {
+        window.location.href = 'index.html'; // Redirect to a default page if no history exists
+    }
+}
+
+// Navigate to item search page
+function search() {
+    window.location.href = 'itemsearch.html';
+}
+
+// Load the shopping list on page load
+document.addEventListener('DOMContentLoaded', loadShoppingList);

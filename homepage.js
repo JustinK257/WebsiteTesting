@@ -11,25 +11,25 @@ function search(){
   }
   
   function vonstrip(){
-    window.location.href = 'vontrip.html'
+    window.location.href = 'otherhtmls/vontrip.html'
   }
   
   function walmarttrip(){
-    window.location.href = 'waltrip.html'
+    window.location.href = 'otherhtmls/waltrip.html'
   }
   
   function tripmore(){
-    window.location.href = 'moretrip.html'
+    window.location.href = 'otherhtmls/moretrip.html'
   }
   
   function targetsale(){
-    window.location.href = 'target.html'
+    window.location.href = 'otherhtmls/target.html'
   }
   
   function ralphscoupon(){
-    window.location.href = 'ralphs.html'
+    window.location.href = 'otherhtmls/ralphs.html'
   }
   
   function sandcmore(){
-    window.location.href = 'sale.html'
+    window.location.href = 'otherhtmls/sale.html'
   }

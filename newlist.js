@@ -47,6 +47,9 @@ function loadShoppingList() {
     }
 }
 
+// Load the shopping list on page load
+document.addEventListener('DOMContentLoaded', loadShoppingList);
+
 function removeItem(index) {
     // Retrieve the current shopping list from localStorage
     const shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
@@ -60,9 +63,6 @@ function removeItem(index) {
     // Reload the list to reflect the changes
     loadShoppingList();
 }
-
-// Load the shopping list on page load
-document.addEventListener('DOMContentLoaded', loadShoppingList);
 
 function decrementItem(index) {
     // Retrieve the current shopping list from localStorage

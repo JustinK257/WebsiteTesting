@@ -24,15 +24,25 @@ function goBack() {
     }
 }
 
-function addToList(productName, productPrice, productApproval) {
-    // Retrieve the existing list from localStorage
+function addToList(item) {
+    // Retrieve the current shopping list from localStorage
     let shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
 
-    // Add the new item to the list
-    shoppingList.push({ name: productName, price: productPrice, approval: productApproval });
+    // Check if the item already exists in the list (by name, or another unique identifier)
+    const existingItemIndex = shoppingList.findIndex(existingItem => existingItem.name === item.name);
+
+    if (existingItemIndex !== -1) {
+        // If item exists, increment its quantity
+        shoppingList[existingItemIndex].quantity += 1;
+    } else {
+        // If item doesn't exist, add it to the list with quantity 1
+        item.quantity = 1;
+        shoppingList.push(item);
+    }
 
     // Save the updated list back to localStorage
     localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
 
-    alert(`${productName} has been added to your list!`);
+    // Optionally, refresh the list on the page
+    loadShoppingList();
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="homepage.css">
+<script src="homepage.js"></script>
+<head>
+  <h1>Shopping List</h1>
+</head>
+<body>
+    
+    <!-- Item Search-->
+    <div class="ItemSearch">
+      <button class="button1" onclick="search()">Item Search</button>
+    </div>
+    
+    <h2 class="basic">Shopping List</h2>
+    <hr>
+    
+    <div class="basicButton">
+      <button class="button2" onclick="newliststart()">+</button>
+      <p>Start a New List</p>
+    </div>
+    
+    <div class="more">
+      <button class="button3" onclick="newlistmore()">...</button>
+    </div>
+    
+    <!-- Trips-->
+    <h2 class="basic">Recent Trips</h2>
+    <hr>
+    
+    <div class="basicButton2">
+      <img id="imgfix" src="https://download.logo.wine/logo/Vons/Vons-Logo.wine.png">
+      <button class="button4" onclick="vonstrip()">
+        <pre>
+          Total Cost: $19.56
+          Trip Time: 20 Minutes
+          Item Count: 5
+        </pre>
+      </button>
+    </div>
+    
+    <div class="basicButton2">
+      <img id="imgfix" src="https://download.logo.wine/logo/Walmart/Walmart-Logo.wine.png">
+      <button class="button4" onclick="walmarttrip()">
+        <pre>
+          Total Cost: $35.54
+          Trip Time: 30 Minutes
+          Item Count: 11
+        </pre>
+      </button>
+    </div>
+    
+    <div class="more">
+      <button class="button3" onclick="tripmore()">...</button>
+    </div>
+    
+    <!-- Sales and Coupons-->
+    <h2 class="basic">Current Sales and Coupons</h2>
+    <hr>
+    
+    <div class="basicButton2">
+      <img id="imgfix" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Target_logo.svg/1541px-Target_logo.svg.png">
+      <button class="button4" onclick="targetsale()">
+        <pre>
+        Sale:
+        20% off all produce
+        </pre>
+      </button>
+    </div>
+    
+    <div class="basicButton2">
+      <img id="imgfix" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Ralphs.svg/187px-Ralphs.svg.png">
+      <button class="button4" onclick="ralphscoupon()">
+        <pre>
+        Coupon:
+        $5 off on any box of dozen of soda cans
+        </pre>
+      </button>
+    </div>
+    
+    <div class="more">
+      <button class="button3" onclick="sandcmore()">...</button>
+    </div>
+      
+  </body>
+  </html>

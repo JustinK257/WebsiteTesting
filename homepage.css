@@ -1,0 +1,111 @@
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #FAFAFA;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    background-color: #5D7FB6;
+    color: #FAFAFA;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  hr{
+    height: 3px;
+    color: #616161;
+    background: #616161;
+  }
+  
+  .basic{
+    padding: 0% 1% 1% 1%;
+    color: #616161;
+  }
+  
+  .ItemSearch {
+    text-align: center;
+    background-color: #616161;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #FAFAFA;
+    width: 80%;
+    padding: 10px;
+    margin: 1% 10% 1% 10%;
+    border-radius: 10px;
+  }
+  
+  .basicButton{
+    text-align: center;
+    background-color: #ABABAB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #FAFAFA;
+    width: 80%;
+    padding: 10px;
+    margin: 1% 10% 1% 10%;
+    border-radius: 10px;
+  }
+  
+  .basicButton2{
+    text-align: right;
+    background-color: #ABABAB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #FAFAFA;
+    width: 80%;
+    padding: 10px;
+    margin: 1% 10% 1% 10%;
+    border-radius: 10px;
+  }
+  
+  .more{
+    text-align: center;
+    background-color: #ABABAB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    padding: 10px;
+    margin: 1% 10% 1% 10%;
+    border-radius: 10px;
+  }
+  
+  .button1 {
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px; 
+    background-color: #616161;
+    color: #FAFAFA; 
+  }
+  
+  .button2 {
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px; 
+    background-color: #CCCCCC;
+    color: #FF4242; 
+    padding: 10px;
+  }
+  
+  .button3 {
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px; 
+    background-color: #ABABAB;
+    color: #FAFAFA; 
+    padding: 10px;
+  }
+  
+  .button4 {
+    font-size: 20px;
+    text-align: right;
+    border-radius: 5px; 
+    background-color: #ABABAB;
+    color: #FAFAFA; 
+  }
+  
+  #imgfix {
+    width: 5%;
+  }
+  
+  input{
+    text-align: center;
+    background-color: #616161;
+    color: #FAFAFA;
+  }

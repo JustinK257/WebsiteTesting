@@ -127,3 +127,57 @@ body{
 .back-button:hover {
     background-color: #5D7FB6; /* Hover color */
 }
+
+/* Style the container for the product card */
+.product-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ABABAB;
+  color: #FAFAFA;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the product information */
+.product-info p {
+  margin: 5px 0;
+}
+
+/* Style for the actions (Remove and Decrement buttons) */
+.product-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Remove button style */
+.remove-button {
+  background-color: #FF6262;
+  color: #FAFAFA;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #ff0000;
+}
+
+/* Decrement button style */
+.decrement-button {
+  background-color: #616161;
+  color: #FAFAFA;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.decrement-button:hover {
+  background-color: #5D7FB6;
+}

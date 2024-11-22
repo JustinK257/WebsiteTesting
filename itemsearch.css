@@ -55,37 +55,3 @@ body{
 .back-button:hover {
     background-color: #5D7FB6; /* Hover color */
 }
-
-/* Container for shopping list */
-.shopping-list-container {
-  margin: 20px auto;
-  width: 80%;
-}
-
-/* Individual product cards in the shopping list */
-.product-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ABABAB; /* Matches the product card color */
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.product-card p {
-  margin: 0;
-  color: #616161; /* Text color for product details */
-  font-size: 18px;
-}
-
-.product-card strong {
-  font-size: 20px;
-}
-
-.shopping-list-container .product-card img {
-  width: 50px;
-  height: auto;
-  margin-right: 15px;
-}

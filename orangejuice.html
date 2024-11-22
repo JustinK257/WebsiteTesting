@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="app.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 class="header1">Shopping List</h1>
+    <link rel="stylesheet" href="orangejuice.css">
+</head>
+<body>
+
+    <button class="back-button" onclick="goBack()">&#8592; Back</button>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Header with Search and Sort Options -->
+        <div class="header">
+            <h1>Orange Juice</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="sort-options">
+                <button>Sort By: Approval</button>
+                <button>Vons</button>
+            </div>
+        </div>
+        
+        <!-- Recently Bought Section -->
+        <section class="recently-bought">
+            <h2>Recently Bought</h2>
+            <div class="product-card">
+                <img src="https://storage.googleapis.com/images-lnb-prd-8936dd0.lnb.prd.v8.commerce.mi9cloud.com/product-images/zoom/00025000100000.png">
+                <p>$4.99 ea</p>
+                <p>Simply Orange Pulp Free - 52 Fl. Oz.</p>
+                <p>92% Approved</p>
+                <button class="add-to-list">Add to List</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.freshop.ncrcloud.com/00025000062735/0543dc945935b5b5586f0ef5735e2a04_large.png">
+                <p>$4.49 ea</p>
+                <p>Minute Maid Orange Juice - 52 Fl. Oz.</p>
+                <p>90% Approved</p>
+                <button class="add-to-list">Add to List</button>
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section class="recommendations">
+            <h2>Recommendations</h2>
+            <div class="product-card">
+                <img src="https://www.pepsicoschoolsource.com/prod/s3fs-public/2021-06/Tropicana%C2%AE%20Pure%20Premium%20Orange%20Juice%20-%2012oz..png">
+                <p>$2.49 ea</p>
+                <p>Tropicana Orange Juice No Pulp - 12 Fl. Oz.</p>
+                <p>89% Approved</p>
+                <button class="add-to-list">Add to List</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.gopuff.com/blob/gopuffcatalogstorageprod/catalog-images-container/resize/cf/version=1_2,format=auto,fit=scale-down,width=800,height=800/47349f11-3aae-402c-b288-d0737cce32f1.png">
+                <p>$5.99 ea</p>
+                <p>Langers Orange Juice - 64 Fl. Oz.</p>
+                <p>87% Approved</p>
+                <button class="add-to-list">Add to List</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

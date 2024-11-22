@@ -1,134 +1,102 @@
-body{
-    font-family: 'Arial', sans-serif;
-    background-color: #FAFAFA;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    background-color: #5D7FB6;
-    color: #FAFAFA;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  hr{
-    height: 3px;
-    color: #616161;
-    background: #616161;
-  }
-  
-  .basic{
-    padding: 0% 1% 1% 1%;
-    color: #616161;
-  }
-  
-  .ItemSearch {
-    text-align: center;
-    background-color: #616161;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #FAFAFA;
-    width: 80%;
-    padding: 10px;
-    margin: 1% 10% 1% 10%;
-    border-radius: 10px;
-  }
-  
-  .basicButton{
-    text-align: center;
-    background-color: #ABABAB;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #FAFAFA;
-    width: 80%;
-    padding: 10px;
-    margin: 1% 10% 1% 10%;
-    border-radius: 10px;
-  }
-  
-  .basicButton2{
-    text-align: right;
-    background-color: #ABABAB;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #FAFAFA;
-    width: 80%;
-    padding: 10px;
-    margin: 1% 10% 1% 10%;
-    border-radius: 10px;
-  }
-  
-  .more{
-    text-align: center;
-    background-color: #ABABAB;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    padding: 10px;
-    margin: 1% 10% 1% 10%;
-    border-radius: 10px;
-  }
-  
-  .button1 {
-    font-size: 24px;
-    text-align: center;
-    border-radius: 5px; 
-    background-color: #616161;
-    color: #FAFAFA; 
-  }
-  
-  .button2 {
-    font-size: 24px;
-    text-align: center;
-    border-radius: 5px; 
-    background-color: #CCCCCC;
-    color: #FF4242; 
-    padding: 10px;
-  }
-  
-  .button3 {
-    font-size: 24px;
-    text-align: center;
-    border-radius: 5px; 
-    background-color: #ABABAB;
-    color: #FAFAFA; 
-    padding: 10px;
-  }
-  
-  .button4 {
-    font-size: 20px;
-    text-align: right;
-    border-radius: 5px; 
-    background-color: #ABABAB;
-    color: #FAFAFA; 
-  }
-  
-  #imgfix {
-    width: 5%;
-  }
-  
-  input{
-    text-align: center;
-    background-color: #616161;
-    color: #FAFAFA;
-  }
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FAFAFA;
+  margin: 0;
+  padding: 0;
+}
 
-  .back-button {
-    background-color: #616161; /* Matches your button color */
-    color: #FAFAFA; /* White text */
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 15px;
-    position: absolute; /* Positioned at the top-left */
-    top: 10px;
-    left: 10px;
+/* Header Styling */
+h1 {
+  background-color: #5D7FB6;
+  color: #FAFAFA;
+  text-align: center;
+  padding: 15px;
+}
+
+hr {
+  height: 3px;
+  color: #616161;
+  background: #616161;
+}
+
+/* Basic Styling */
+.basic {
+  padding: 0% 1% 1% 1%;
+  color: #616161;
+}
+
+/* Button Containers */
+.ItemSearch, .basicButton {
+  text-align: center;
+  background-color: #616161;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #FAFAFA;
+  width: 80%;
+  padding: 10px;
+  margin: 1% 10% 1% 10%;
+  border-radius: 10px;
+}
+
+.basicButton {
+  background-color: #ABABAB;
+}
+
+/* Button Styling */
+.button1 {
+  font-size: 24px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #616161;
+  color: #FAFAFA;
+}
+
+.button2 {
+  font-size: 24px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #CCCCCC;
+  color: #FF4242;
+  padding: 10px;
+}
+
+.button3 {
+  font-size: 24px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ABABAB;
+  color: #FAFAFA;
+  padding: 10px;
+}
+
+/* Back Button Styling */
+.back-button {
+  background-color: #616161;
+  color: #FAFAFA;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .back-button:hover {
-    background-color: #5D7FB6; /* Hover color */
+  background-color: #5D7FB6;
 }
 
-/* Style the container for the product card */
+/* Shopping List Empty State */
+#shopping-list p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #616161;
+  text-align: center;
+}
+
+/* Product Card Styling */
 .product-card {
   display: flex;
   justify-content: space-between;
@@ -141,18 +109,18 @@ body{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for the product information */
+/* Product Info Styling */
 .product-info p {
   margin: 5px 0;
 }
 
-/* Style for the actions (Remove and Decrement buttons) */
+/* Product Actions */
 .product-actions {
   display: flex;
   gap: 10px;
 }
 
-/* Remove button style */
+/* Remove Button Styling */
 .remove-button {
   background-color: #FF6262;
   color: #FAFAFA;
@@ -164,10 +132,10 @@ body{
 }
 
 .remove-button:hover {
-  background-color: #ff0000;
+  background-color: #FF0000;
 }
 
-/* Decrement button style */
+/* Decrement Button Styling */
 .decrement-button {
   background-color: #616161;
   color: #FAFAFA;
@@ -181,3 +149,15 @@ body{
 .decrement-button:hover {
   background-color: #5D7FB6;
 }
+
+/* Input Field for Quantity */
+input[type='number'] {
+  width: 50px;
+  text-align: center;
+  background-color: #FAFAFA;
+  color: #616161;
+  border: 1px solid #616161;
+  border-radius: 5px;
+  padding: 5px;
+}
+

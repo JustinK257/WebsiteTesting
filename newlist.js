@@ -82,3 +82,15 @@ function decrementItem(index) {
     // Reload the list to reflect the changes
     loadShoppingList();
 }
+
+function updateQuantity(index, newQuantity) {
+    const shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
+    shoppingList[index].quantity = Math.max(0, newQuantity); // Prevent negative quantities
+
+    if (shoppingList[index].quantity === 0) {
+        shoppingList.splice(index, 1); // Remove item if quantity is zero
+    }
+
+    localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
+    loadShoppingList();
+}

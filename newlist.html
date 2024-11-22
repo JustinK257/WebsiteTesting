@@ -1,29 +1,35 @@
 <!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="newlist.css">
-<script src="newlist.js"></script>
+<html lang="en">
 <head>
-    <button class="back-button" onclick="goBack()">&#8592; Back</button>
-    <h1>Shopping List</h1>
+    <link rel="stylesheet" href="newlist.css">
+    <script src="newlist.js" defer></script>
+    <title>Shopping List</title>
 </head>
-<body>
+<body onload="loadShoppingList()">
+    <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">&#8592; Back</button>
     
-    <!-- Item Search-->
+    <!-- Page Header -->
+    <h1>Shopping List</h1>
+
+    <!-- Item Search -->
     <div class="ItemSearch">
-      <button class="button1" onclick="search()">Item Search</button>
+        <button class="button1" onclick="search()">Item Search</button>
     </div>
-    
+
+    <!-- Shopping List Section -->
     <h2 class="basic">Shopping List</h2>
     <hr>
-    
+
+    <!-- Container for dynamically loaded shopping list -->
+    <div id="shopping-list" class="shopping-list-container">
+        <!-- Dynamically generated content will appear here -->
+    </div>
+
+    <!-- Add Item Section -->
     <div class="basicButton">
-      <button class="button2" onclick="search()">+</button>
-      <p>Add an Item</p>
+        <button class="button2" onclick="search()">+</button>
+        <p>Add an Item</p>
     </div>
-    
-    <div id="shopping-list" class="container">
-      <!-- List will be dynamically added here -->
-    </div>
-    
 </body>
 </html>

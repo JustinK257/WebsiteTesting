@@ -33,3 +33,5 @@ function search(){
   function sandcmore(){
     navigateToPage('otherhtmls/sale.html');
   }
+
+  // update

@@ -46,14 +46,17 @@ body{
   }
   
   .basicButton2{
-    text-align: right;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Distribute space between image and button */
     background-color: #ABABAB;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #FAFAFA;
-    width: 80%;
+    width: 80%; /* Set container width */
     padding: 10px;
-    margin: 1% 10% 1% 10%;
+    margin: 1% 10%; /* Center align the container */
     border-radius: 10px;
+    gap: 10px; /* Add spacing between items */
   }
   
   .more{
@@ -79,7 +82,7 @@ body{
     text-align: center;
     border-radius: 5px; 
     background-color: #CCCCCC;
-    color: #FF4242; 
+    color: #6DAA68; 
     padding: 10px;
   }
   
@@ -98,10 +101,12 @@ body{
     border-radius: 5px; 
     background-color: #ABABAB;
     color: #FAFAFA; 
+    flex: 1;
   }
   
   #imgfix {
-    width: 5%;
+    width: 10%;
+    height: auto;
   }
   
   input{

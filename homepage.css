@@ -46,17 +46,17 @@ body{
   }
   
   .basicButton2{
-    display: flex; /* Flexbox layout */
-    align-items: center; /* Vertically center items */
-    justify-content: space-between; /* Distribute space between image and button */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
     background-color: #ABABAB;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #FAFAFA;
-    width: 80%; /* Set container width */
+    width: 80%; 
     padding: 10px;
-    margin: 1% 10%; /* Center align the container */
+    margin: 1% 10%; 
     border-radius: 10px;
-    gap: 10px; /* Add spacing between items */
+    gap: 10px; 
   }
   
   .more{
